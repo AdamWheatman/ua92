@@ -1,0 +1,215 @@
+/* GLOBAL FONTS */
+@font-face {
+    font-family: Staatliches;
+    src: url(Staatliches-Regular.ttf);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(Raleway-VariableFont_wght.ttf)
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(Raleway-VariableFont_wght.ttf);
+    font-weight: italic;
+}
+
+/* Desktop CSS */
+@media only screen and (min-width: 992px) {
+    :root{
+        --main-font: Raleway;
+        --title-font: Staatliches;
+        font-size: 62.5%;
+    }
+
+    body{
+        font-family: var(--main-font);
+        color: white;
+        background-color: #1A1A1D;
+        font-size: 1.4rem;
+        height: 155rem;
+        align-items: center;
+    }
+        
+    .nav{
+        font-family: var(--title-font);
+        color: white;
+        background-color: #950740;
+        display: flow-root;
+        border-radius: 2rem;
+        margin: 3rem auto 0 auto;
+        padding: 0;
+        min-width: 120rem;
+        max-width: 135rem;
+        align-self: center;
+    }
+        
+    .nav__link{
+        text-decoration: none;
+        color: var(--font-colour);
+        display: inline-block;
+        text-align: left;
+        margin-right: 2rem;
+        margin-left: 1rem;
+        vertical-align: text-top;
+        font-size: 2.4rem;
+        
+    }
+        
+    .nav__link--logo{
+        text-align: left;
+        font-size: 4rem;
+        float: right;
+        padding-top: 2rem ; 
+        margin-left: 39rem;
+    }
+        
+    .logo{
+        width: 6rem;
+        float: right;
+        margin: -1.5rem 0 0 1rem;
+    }
+
+    .nav__menu{
+        padding: 0.25rem 0.5rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        color: 0,0,0;
+        background-color: transparent;
+        border: 1 solid 0,0,0;
+        border-radius: 0.375rem;
+        transition: box-shadow 0.15s ease-in-out;;
+        margin: 2rem 0 2rem  ;
+    }
+
+    .nav__menu--icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        background-image: url(menu-icon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+
+    .container1{
+        display: flex;
+        flex-wrap: inherit;
+        justify-content: space-between;
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+    }
+
+    .footer{
+        font-family: Staatliches;
+        color: white;
+        text-decoration: none;
+        font-size: 4rem;
+        align-self: center;
+        margin-left:50rem ;
+        margin-top: 1rem;
+    }
+}
+
+/* Mobile CSS */
+
+@media only screen and (max-width: 992px) {
+    :root{
+        --main-font: Raleway;
+        --title-font: Staatliches;
+        font-size: 62.5%;
+    }
+
+    .nav{
+        font-family: Staatliches;
+        color: white;
+        background-color: #950740;
+        display: flow-root;
+        border-radius: 2rem;
+        align-self: center;
+        margin: 1rem 4.5rem 0 1rem;
+        min-width: 35rem;
+    }
+
+    .nav__link{
+        text-decoration: none;
+        color: var(--font-colour);
+        display: inline-block;
+        margin-left: 1rem;
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .nav__link--logo{
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+    
+    .logo{
+        width: 3rem;
+        float: right;
+        margin-left: 1rem;
+        margin-top: -1rem;
+    }
+
+    body{
+        font-family: var(--main-font);
+        color: white;
+        background-color: #1A1A1D;
+        font-size: 1.4rem;
+        height: 155rem;
+    }
+
+    .nav__menu{
+        padding: 0.25rem 0.5rem;
+        font-size: 1.25rem;
+        line-height:1;
+        color: 0,0,0;
+        background-color: transparent;
+        border: 1 solid 0,0,0;
+        border-radius: 0.375rem;
+        transition: box-shadow 0.15s ease-in-out;;
+        margin: 1rem 0 1rem  ;
+    }
+
+    .nav__menu--icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        background-image: url(menu-icon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+
+    .container1{
+        display: flex;
+        flex-wrap: inherit;
+        justify-content: space-between;
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+    }
+
+    .footer{
+        font-family: Staatliches;
+        color: white;
+        text-decoration: none;
+        font-size: 1.4rem;
+        align-self: center;
+        margin-left: 7rem;
+        margin-top: 1rem;
+    }
+    
+    .footer-logo{
+        width: 4rem;
+        margin-top: -1rem;
+        margin-left: 1rem;
+    }
+}

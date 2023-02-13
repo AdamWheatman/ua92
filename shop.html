@@ -1,0 +1,397 @@
+<!-- ALL CODE IS MINE UNLESS STATED OTHERWISE -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Music Company</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/products.css">
+    <link rel="shortcut icon" href="/images/SimplifiedLogo.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg nav nav--main">
+        <div class="container1">
+
+            <button class="navbar-toggler nav__menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="nav__menu--icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+
+                    <a class="nav__link" aria-current="page" href="index.html">
+                        Home
+                    </a>
+
+                    <a class="nav__link " href="about.html">
+                        About Us
+                    </a>
+
+                    <a class="nav__link active" href="shop.html">
+                        Products
+                    </a>
+
+                    <a class="nav__link" href="contact.html">
+                        Contact Us
+                    </a>
+                    
+                </div>
+
+                <a class="nav__link nav__link--logo" href="index.html">The Music Company
+                    <img src="/images/SimplifiedLogo.png" class="logo" alt="The Music Company Logo">
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="banner">
+        <h1 class="big-text">
+            Products
+        </h1>
+    </section>
+
+    <section class="all-albums">
+        <div class="album album-left">
+
+                <div class=" album__side album__side--front album-TheBeatles" id ="album-beatles">
+                    <img src="/images/TheBeatles.jpg" class="img" alt = "Front Album Cover of The Beatles, 'Abbey Road'" >
+                    <button class="change-albums" onclick = "return rotate_beatles();">Flip Album </button>
+                </div>
+            
+                    
+                <div class="album__side album__side--back album__side--back-TheBeatles" id ="album-beatles-back">
+                    <img src="/images/Thebeatles-Back-new.png" class="img" alt = "Back Album Cover of The Beatles, 'Abbey Road'">
+                    <div class="item-name product-name">
+                        Abbey Road 
+                    </div>
+                    <div class="buy-now">
+                        <button class="change-albums-back" onclick = "return rotate_beatles_back();">Flip Album </button> 
+                        £40
+                        <button class="buy-button" data-action ="add-to-cart" >Add To Cart</button>
+
+                        <img src="/images/TheBeatles.jpg" class="product-img" style="display: none;" alt = "Front Album Cover of The Beatles, 'Abbey Road'">
+                        <p class="product-price" style="display: none;">40</p>
+
+                    </div>
+                </div>
+        </div>
+
+        <div class="album">
+                <div class="album-Eminem album__side album__side--front" id ="album-eminem">
+                    <img src="/images/Eminem.jpg" class="img" alt = "Front Album Cover of Eminems, 'The Marshall Mathers LP 1'">
+                    <button class="change-albums" onclick = "return rotate_eminem();">Flip Album </button>
+                </div>
+            
+                    
+                <div class="album__side album__side--back album__side--back-Eminem" id ="album-eminem-back">
+                    <img src="/images/Eminem-Back-new.png" class="img" alt = "Front Album Cover of Eminems, 'The Marshall Mathers LP 1'">
+                    <div class="item-name product-name">
+                        The Marshal Mathers LP 1
+                    </div>
+                    <div class="buy-now">
+                        <button class="change-albums-back" onclick = "return rotate_eminem_back();">Flip Album </button>
+                        £40
+                        <button class="buy-button" data-action ="add-to-cart">
+                            Add To Cart
+                        </button>
+
+                        <img src="/images/Eminem.jpg" class="product-img" style="display: none;" alt = "Front Album Cover of Eminems, 'The Marshall Mathers LP 1'">
+                        <p class="product-price" style="display: none;">40</p>
+                    </div>
+                </div>
+        </div>
+
+        <div class="album">
+            <div class="album-TaylorSwift album__side album__side--front" id ="album-taylor">
+                <img src="/images/TaylorSwift.png" class="img" alt = "Front Album Cover of Taylor Swifts, '1989'">
+                <button class="change-albums" onclick = "return rotate_taylor();">Flip Album </button>
+            </div>
+        
+                
+            <div class="album__side album__side--back album__side--back-TaylorSwift" id ="album-taylor-back">
+                <img src="/images/TaylorSwift-Back.png" class="img" alt = "Back Album Cover of Taylor Swifts, '1989'">
+                <div class="item-name product-name">
+                    1989
+                </div>
+                <div class="buy-now ">
+                    <button class="change-albums-back" onclick = "return rotate_taylor_back();">Flip Album </button>
+                    £40
+                    <button class="buy-button" data-action ="add-to-cart">
+                        Add To Cart
+                    </button>
+
+                    <img src="/images/TaylorSwift.png" class="product-img" style="display: none;" alt = "Front Album Cover of Taylor Swifts, '1989'">
+                    <p class="product-price" style="display: none;">40</p>
+                </div>
+            </div>
+        </div>  
+
+        <div class="album album-left">
+                <div class="album-EdSheeran album__side album__side--front" id ="album-ed">
+                    <img src="/images/Ed_Sheeran.jpg" class="img" alt = "Front Album Cover of Ed Sheerans, 'Divide'">
+                    <button class="change-albums" onclick = "return rotate_ed();">Flip Album </button>
+                </div>
+            
+                    
+                <div class="album__side album__side--back album__side--back-EdSheeran" id ="album-ed-back">
+                    <img src="/images/EdSheeran-Back.jpg" class="img" alt = "Back Album Cover of Ed Sheerans, 'Divide'">
+                    <div class="item-name product-name">
+                        Divide
+                        
+                    </div>
+                    <div class="buy-now">
+                        <button class="change-albums-back" onclick = "return rotate_ed_back();">Flip Album </button>
+                        £40
+                        <button class="buy-button" data-action ="add-to-cart">
+                            Add To Cart
+                        </button>
+
+                        <img src="/images/Ed_Sheeran.jpg" class="product-img" style="display: none;" alt = "Front Album Cover of Ed Sheerans, 'Divide'">
+                        <p class="product-price" style="display: none;">40</p>
+                    </div>
+                </div>
+        </div>
+
+        <div class="album">
+            <div class="album-GunsNRoses album__side album__side--front" id ="album-guns">
+                <img src="/images/Guns_N_Roses.jpg" class="img" alt = "Front Album Cover of Guns N Roses, 'Appetite For Destruction'">
+                <button class="change-albums" onclick = "return rotate_guns();">Flip Album </button>
+            </div>
+        
+                
+            <div class="album__side album__side--back album__side--back-GunsNRoses" id ="album-guns-back">
+                <img src="/images/GunsNRoses-Back.jpg" class="img" alt = "Back Album Cover of Guns N Roses, 'Appetite For Destruction'">
+                <div class="item-name product-name">
+                    Appetite For Destruction
+                </div>
+                <div class="buy-now">
+                    <button class="change-albums-back" onclick = "return rotate_guns_back();">Flip Album </button>
+                    £40
+                    <button class="buy-button" data-action ="add-to-cart">
+                        Add To Cart
+                    </button>
+
+                    <img src="/images/Guns_N_Roses.jpg" class="product-img" style="display: none;" alt = "Front Album Cover of Guns N Roses, 'Appetite For Destruction'">
+                    <p class="product-price" style="display: none;">40</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="album">
+            <div class="album-MCR album__side album__side--front" id ="album-mcr">
+                <img src="/images/MCR.jpg" class="img" alt = "Front Album Cover of My Chemical Romances, 'Welcome To The Black Parade'">
+                <button class="change-albums" onclick = "return rotate_mcr();">Flip Album </button>
+            </div>
+        
+                
+            <div class="album__side album__side--back album__side--back-MCR" id ="album-mcr-back">
+                <img src="/images/MCR-Back.jpg" class="img" alt = "Back Album Cover of My Chemical Romances, 'Welcome To The Black Parade'">
+                <div class="item-name product-name">
+                    Welcome To The Black Parade
+                    
+                </div>
+                <div class="buy-now">
+                    <button class="change-albums-back" onclick = "return rotate_mcr_back();">Flip Album </button>
+                    £40
+                    <button class="buy-button" data-action ="add-to-cart">
+                        Add To Cart
+                    </button>
+
+                    <img src="/images/MCR.jpg" class="product-img" style="display: none;" alt = "Front Album Cover of My Chemical Romances, 'Welcome To The Black Parade'">
+                    <p class="product-price" style="display: none;">40</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="album album-left">
+            <div class="album-MetroBoomin album__side album__side--front" id ="album-metro">
+                <img src="/images/MetroBoomin.jfif" class="img" alt = "Front Album Cover of Metro Boomins, 'Heroes and Villains'">
+                <button class="change-albums" onclick = "return rotate_metro();">Flip Album </button>
+            </div>
+        
+                
+            <div class="album__side album__side--back album__side--back-MetroBoomin" id ="album-metro-back">
+                <img src="/images/MetroBoomin-Back.jpg" class="img" alt = "Back Album Cover of Metro Boomins, 'Heroes and Villains'">
+                <div class="item-name product-name">
+                    Heroes and Villains
+                </div>
+                <div class="buy-now">
+                    <button class="change-albums-back" onclick = "return rotate_metro_back();">Flip Album </button>
+                    £40
+                    <button class="buy-button" data-action ="add-to-cart">
+                        Add To Cart
+                    </button>
+
+                    <img src="/images/MetroBoomin.jfif" class="product-img" style="display: none;" alt = "Front Album Cover of Metro Boomins, 'Heroes and Villains'">
+                    <p class="product-price" style="display: none;">40</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="album">
+            <div class="album-Queen album__side album__side--front" id ="album-queen">
+                <img src="/images/Queen.jpg" class="img" alt = "Front Album Cover of Queens, 'Hot Space'">
+                <button class="change-albums" onclick = "return rotate_queen();">Flip Album </button>
+            </div>
+                
+            <div class="album__side album__side--back album__side--back-Queen" id ="album-queen-back">
+                <img src="/images/Queen-Back.jpg" class="img" alt = "Back Album Cover of Queens, 'Hot Space'">
+                <div class="item-name product-name">
+                    Hot Space
+                </div>
+                <div class="buy-now">
+                    <button class="change-albums-back" onclick = "return rotate_queen_back();">Flip Album </button>
+                    £40
+                    <button class="buy-button" type="button" data-action ="add-to-cart">
+                        Add To Cart
+                    </button>
+
+                    <img src="/images/Queen.jpg" class="product-img" style="display: none;" alt = "Front Album Cover of Queens, 'Hot Space'">
+                    <p class="product-price" style="display: none;">40</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="album">          
+            <div class="album-PinkFloyd album__side album__side--front" id ="album-pink">
+                <img src="/images/PinkFloyd.jpg" class="img" alt = "Front Album Cover of Pinks Floyds, 'Darkside Of The Moon'"> 
+                <button class="change-albums" onclick = "return rotate_pink();">Flip Album </button>
+            </div>
+        
+                
+            <div class="album__side album__side--back album__side--back-PinkFloyd" id ="album-pink-back">
+                <img src="/images/PinkFloyd-Back.jpg" class="img" alt = "Back Album Cover of Pink Floyds, 'Darkside Of The Moon'">
+                
+                <div class="item-name product-name">
+                    Darkside Of The Moon
+                </div>
+                <div class="buy-now">
+                    <button class="change-albums-back" onclick = "return rotate_pink_back();">Flip Album </button>
+                    £40
+                    <button class="buy-button" type="button" data-action ="add-to-cart">
+                        Add To Cart
+                    </button>
+
+                    <img src="/images/PinkFloyd.jpg" class="product-img" style="display: none;"  alt = "Front Album Cover of Pink Floyds, 'Darkside Of The Moon'">
+                    <p class="product-price" style="display: none;">40</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cart-title">
+        Cart
+    </div>
+
+    <div class="cart">
+    </div>
+   
+    <nav class="nav nav--main">
+        <a class="footer" href="index.html">The Music Company
+            <img src="/images/SimplifiedLogo.png" class="footer-logo" alt="The Music Company Logo">
+        </a>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="/JavaScript/script.js"></script>
+    <script>
+        function rotate_beatles(){
+            document.getElementById('album-beatles').classList.add('flip')
+            document.getElementById('album-beatles-back').classList.add('flip-back')
+        }
+
+        function rotate_beatles_back(){
+            document.getElementById('album-beatles').classList.remove('flip')
+            document.getElementById('album-beatles-back').classList.remove('flip-back')
+        }
+
+        function rotate_eminem(){
+            document.getElementById('album-eminem').classList.add('flip')
+            document.getElementById('album-eminem-back').classList.add('flip-back')
+        }
+
+        function rotate_eminem_back(){
+            document.getElementById('album-eminem').classList.remove('flip')
+            document.getElementById('album-eminem-back').classList.remove('flip-back')
+        }
+
+        function rotate_taylor(){
+            document.getElementById('album-taylor').classList.add('flip')
+            document.getElementById('album-taylor-back').classList.add('flip-back')
+        }
+
+        function rotate_taylor_back(){
+            document.getElementById('album-taylor').classList.remove('flip')
+            document.getElementById('album--taylor-back').classList.remove('flip-back')
+        }
+
+        function rotate_ed(){
+            document.getElementById('album-ed').classList.add('flip')
+            document.getElementById('album-ed-back').classList.add('flip-back')
+        }
+
+        function rotate_ed_back(){
+            document.getElementById('album-ed').classList.remove('flip')
+            document.getElementById('album-ed-back').classList.remove('flip-back')
+        }
+
+        function rotate_guns(){
+            document.getElementById('album-guns').classList.add('flip')
+            document.getElementById('album-guns-back').classList.add('flip-back')
+        }
+
+        function rotate_guns_back(){
+            document.getElementById('album-guns').classList.remove('flip')
+            document.getElementById('album-guns-back').classList.remove('flip-back')
+        }
+
+        function rotate_mcr(){
+            document.getElementById('album-mcr').classList.add('flip')
+            document.getElementById('album-mcr-back').classList.add('flip-back')
+        }
+
+        function rotate_mcr_back(){
+            document.getElementById('album-mcr').classList.remove('flip')
+            document.getElementById('album-mcr-back').classList.remove('flip-back')
+        }
+
+        function rotate_metro(){
+            document.getElementById('album-metro').classList.add('flip')
+            document.getElementById('album-metro-back').classList.add('flip-back')
+        }
+
+        function rotate_metro_back(){
+            document.getElementById('album-metro').classList.remove('flip')
+            document.getElementById('album-metro-back').classList.remove('flip-back')
+        }
+
+        function rotate_queen(){
+            document.getElementById('album-queen').classList.add('flip')
+            document.getElementById('album-queen-back').classList.add('flip-back')
+        }
+
+        function rotate_queen_back(){
+            document.getElementById('album-queen').classList.remove('flip')
+            document.getElementById('album-queen-back').classList.remove('flip-back')
+        }
+
+        function rotate_pink(){
+            document.getElementById('album-pink').classList.add('flip')
+            document.getElementById('album-pink-back').classList.add('flip-back')
+        }
+
+        function rotate_pink_back(){
+            document.getElementById('album-pink').classList.remove('flip')
+            document.getElementById('album-pink-back').classList.remove('flip-back')
+        }
+    </script>
+</body>
+
+
+</html>

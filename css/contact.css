@@ -1,0 +1,179 @@
+@media only screen and (min-width: 992px) {
+    .contact_form{
+        font-family: var(--title-font);
+        background-color: white;
+        width: 70rem;
+        height: 100rem;
+        border: solid 10px black;
+        margin: 3rem auto 0 auto;
+    }
+
+    .banner{
+        margin: 3rem auto 0rem auto;
+        border-radius: 2rem;
+        min-width: 120rem;
+        max-width: 135rem;
+        padding-top: 1rem;
+        display: flow-root;
+        color: white;
+        font-family: var(--title-font);
+    }
+
+    .title{
+        font-family: var(--title-font);
+        color: black;
+        font-size: 2.4rem;
+        margin: 5rem 0 0 3rem;
+    }
+
+    .input{
+        font-family: var(--title-font);
+        font-size: 1.8rem;
+        background-color: #4E4E50;
+        display:block;
+        border: 7px solid black;
+        margin: 4rem 0 0 3rem
+    }
+
+    .name{
+        width: 28.1rem;
+        height: 5rem;
+        display: inline-block;
+        padding-left: 2rem;
+    }
+
+    .email, .number{
+        width: 59.4rem;
+        height: 5rem;
+        padding-left: 2rem
+    }
+
+    .big-text-area{
+        width: 59.4rem;
+        height: 37.8rem;
+        max-height: 37.8rem;
+        padding-left: 2rem;    
+        margin: 4rem 0 0 3rem;
+        background-color: #4E4E50;
+        display:block;
+        border: 7px solid black;
+    }
+
+    .button{
+        font-family: var(--title-font);
+        font-size: 3.6rem;
+        width: 22rem;
+        height: 10rem;
+        color: white;
+        background-color: black;
+        border: 10px solid black;
+        margin: 1rem auto 0 auto;
+    }
+
+    ::placeholder{
+        font-family: var(--title-font);
+        color: black;
+        opacity: 0.5;
+    }
+
+    .modal{
+        display: none; 
+        position: fixed;
+        font-family: var(--title-font);
+        overflow: auto;
+    }
+    
+    .modal-content {
+        font-family: var(--title-font);
+        text-align: center;
+        font-size: 2.6rem;
+        background-color: white;
+        margin: 15% auto; 
+        -webkit-animation-name: fade; 
+        -webkit-animation-duration: 0.5s;
+        animation-name: fade;
+        animation-duration: 0.5s;
+    }
+    
+    .close {
+        color: #4E4E50;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover, .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .popup-link{
+        color: var(--black);
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .contact_form{
+        font-family: var(--title-font);
+        background-color: white;
+        border: solid 10px black;
+        margin: 3rem 3rem 0 3rem;
+        min-width: 21rem;
+        padding-bottom: 1rem;
+        align-self: center;
+    }
+
+    .title{
+        font-family: var(--title-font);
+        color: black;
+        font-size: 2.4rem;
+        margin: 5rem 0 0 3rem;
+    }
+
+    .input, .name, .email, .number{
+        font-family: var(--title-font);
+        font-size: 1.8rem;
+        background-color: #4E4E50;
+        display:block;
+        border: 7px solid black;
+        margin: 4rem ;
+        width: calc(100% - 7rem);
+        height: 5rem;
+        min-width: 12rem;
+        max-width: 80rem;
+        padding-left: 2rem;
+    }
+
+    .big-text-area{
+        width: calc(100% - 6rem);
+        height: 37rem;
+        max-height: 37.8rem;
+        padding-left: 2rem;    
+        margin: 4rem 0 0 3rem;
+        background-color: #4E4E50;
+        display:block;
+        border: 7px solid black;
+    }
+
+    .button{
+        font-family: var(--title-font);
+        font-size: 3.6rem;
+        width: 22rem;
+        height: 10rem;
+        color: white;
+        background-color: black;
+        border: 10px solid black;
+        margin-top: 1rem;
+    }
+
+    .big-text{
+        font-family:var(--title-font);
+    }
+
+    ::placeholder{
+        font-family: var(--title-font);
+        color: black;
+        opacity: 0.5;
+    }
+}

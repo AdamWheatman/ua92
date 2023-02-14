@@ -220,7 +220,7 @@
     .change-albums-back{
         border-radius: 3rem;
         border: 3px solid black ;
-        margin: 1.75rem 5rem 0 -1rem
+        margin: 1.75rem 3rem 0 -1rem
     }
 
     .big-text{
@@ -237,9 +237,8 @@
         backface-visibility: hidden;
         perspective: 90rem;
         transition: transform 1s ease-in-out;
-        margin-left: 3rem;
-        margin-right: auto;
-        margin-top: 3rem;
+        margin: 3rem auto 0rem auto;
+        padding: 3rem;
     }
 
     .img{

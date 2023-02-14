@@ -7,13 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Music Company</title>
+    <!-- BootStrap CSS from here: https://getbootstrap.com/docs/5.3/getting-started/introduction/  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Custom CSS -->    
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="contact.css">
     <link rel="shortcut icon" href="SimplifiedLogo.png" type="image/x-icon">
 </head>
 
 <body class="body1">
+    <!-- Navigation Bar - Header -->
     <nav class="navbar navbar-expand-lg nav nav--main">
         <div class="container1">
 
@@ -49,6 +52,8 @@
         </div>
     </nav>
 
+<!--This is a Script which would allow for the values that the user enters in the form to be saved. 
+    These Values would then be retrived by "names.js" when going to Complete.html -->
     <script>
         function store(){   
             var InputEmail = document.getElementById("email");
@@ -75,11 +80,15 @@
         </h1>
     </section>
 
+    <!-- Form can only be submitted when everything has been filled in correctly, once submitted the for will automatically 
+         redirect the user to Complete.html where the user can confirm details-->
     <form method = "POST" onsubmit = "return store();" action = "complete.html" class ="contact_form" >
     
         <p class="title">
             Contact Information
         </p>
+        
+<!--Basic Validation within the inupt types as "email" forces an "@" symbol, and the "tel" limits inputs to 11 characters-->
         
         <input type="email" class="input email" name="contact__email" id="email" placeholder="Email Address: " required> 
         
@@ -94,21 +103,23 @@
         </p>
 
         <textarea id="message" cols="30" rows="10" class="big-text-area" placeholder="Tell Us Something" required></textarea>
-
+        
+        <!--The Center Tag in HTML is outdated however, 
+            i was not able to center the button correctly in CSS so this is the best alternative-->
         <center>
-            <button class="button" type="submit" value="Submit" id="myBtn"> 
+            <button class="button" type="submit" value="Submit"> 
                 Submit
             </button>
         </center>
-
     </form>
 
+    <!--Navigation Bar - Footer-->
     <nav class="nav nav--main">
         <a class="footer" href="index.html">The Music Company
             <img src="SimplifiedLogo.png" class="footer-logo" alt="The Music Company Logo">
         </a>
     </nav>
-
+    <!-- BootStrap JavaScript from here: https://getbootstrap.com/docs/5.3/getting-started/introduction/  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </body>

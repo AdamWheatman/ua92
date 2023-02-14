@@ -270,7 +270,7 @@
 
     .buy-now{
         font-family: var(--title-font);
-        font-size: 2.4rem;
+        font-size: 1.5rem;
         color: white;
         margin-left: 2rem ; 
     }
@@ -282,7 +282,7 @@
         border: 3px solid white;
         border-radius: 2rem;
         background-color: #1A1A1D;
-        margin-left: 1rem;
+        margin-left: 2rem;
     }
 
 

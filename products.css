@@ -237,7 +237,7 @@
         backface-visibility: hidden;
         perspective: 90rem;
         transition: transform 1s ease-in-out;
-        margin-left: auto;
+        margin-left: 3rem;
         margin-right: auto;
         margin-top: 3rem;
     }
@@ -258,7 +258,7 @@
         outline: 10px solid white;
         backface-visibility: hidden;
         transition: transform 1s ease-in-out;
-        margin-left: 15rem:
+        margin-left: 3rem:
     }
 
     .item-name{

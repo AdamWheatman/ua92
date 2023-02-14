@@ -18,8 +18,11 @@
 /* Desktop CSS */
 @media only screen and (min-width: 992px) {
     :root{
+        /*This is taking the original font faces set earlier and applying them to variables*/
         --main-font: Raleway;
         --title-font: Staatliches;
+        
+        /*This is set so that "rem" is set to be 1rem = 10px*/
         font-size: 62.5%;
     }
 

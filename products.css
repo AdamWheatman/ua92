@@ -261,7 +261,7 @@
 
     .item-name{
         font-family: var(--title-font);
-        font-size: 2.4rem;
+        font-size: 2rem;
         color: black;
         margin: -11rem 0 0 2rem;
         -webkit-text-fill-color: transparent;
@@ -270,14 +270,14 @@
 
     .buy-now{
         font-family: var(--title-font);
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: white;
         margin-left: 2rem ; 
     }
     
     .buy-button{
         font-family: var(--title-font);
-        font-size: 1.4rem;
+        font-size: 2rem;
         color: white;
         border: 3px solid white;
         border-radius: 2rem;

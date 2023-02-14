@@ -80,8 +80,10 @@
         </h1>
     </section>
 
-    <!-- Form can only be submitted when everything has been filled in correctly, once submitted the for will automatically 
-         redirect the user to Complete.html where the user can confirm details-->
+    <!-- Form can only be submitted when everything has been filled in correctly, once submitted the form will try to automatically 
+         redirect the user to Complete.html where the user can confirm details however, the GitHub Servers is configured in a way to not
+         allow a redirect to this URL, so it leads to a "405 Not Allowed" you can still access the page by entering the URL Manually into the serach bar 
+         the full url should be: https://adamwheatman.github.io/ua92/complete.html-->
     <form method = "POST" onsubmit = "return store();" action = "complete.html" class ="contact_form" >
     
         <p class="title">

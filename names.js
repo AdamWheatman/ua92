@@ -1,3 +1,5 @@
+// This is my own script including comments and functions
+
 window.onload = function details(){
     // collecting information from the contact.html form
     var email = localStorage.getItem("email")

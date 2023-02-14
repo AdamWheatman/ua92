@@ -1,6 +1,6 @@
-@media only screen and (min-width: 992px) {
-    /* This is only to make it fit the theming of the website, as the about us page is Extremly basic
+ /* This is only to make it fit the theming of the website, as the about us page is Extremly basic
         so not a lot of Css Is Required*/
+@media only screen and (min-width: 992px) {
     .aboutus{
         font-family: var(--title-font);
         color: black;

@@ -18,6 +18,11 @@ addtocartbtnDom.forEach(addtocartbtnDom => {
 
     const IsinCart = cart.filter(cartItem => cartItem.name === product.name).length > 0;
     if (IsinCart === false) {
+      
+      if(document.querySelector('.cart-title') === null){
+      cartDom.insertAdjacentHTML("beforeend", `<div class="cart-title">Cart</div>`)
+      }
+      
       cartDom.insertAdjacentHTML("beforeend",`
       <div class="d-flex flex-row shadow-sm cards cart-items mt-2 mb-3 animated flipInX item">
         <div class="p-2">

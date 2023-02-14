@@ -199,7 +199,7 @@
         background-size: cover;
         height: 15rem;
         margin: 1rem 4.5rem 0 1rem;
-        min-width: 37rem;
+        min-width: 36rem;
         max-width: 135rem;
         padding-top: 1rem;
         display: flow-root;
@@ -229,9 +229,9 @@
     }
 
     .album{
-        min-height: 40rem;
+        min-height: 34rem;
         max-height: 45rem;
-        min-width: 40rem ;
+        min-width: 34rem ;
         max-width: 45rem;
         display: flow-root;
         backface-visibility: hidden;
@@ -253,8 +253,8 @@
 
     .album__side{
         position: absolute;
-        width: 36rem;
-        height: 36rem;
+        width: 34rem;
+        height: 34rem;
         outline: 10px solid white;
         backface-visibility: hidden;
         transition: transform 1s ease-in-out;

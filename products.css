@@ -220,7 +220,7 @@
     .change-albums-back{
         border-radius: 3rem;
         border: 3px solid black ;
-        margin: 1.75rem 1rem 0 -1rem
+        margin: 0rem 0rem 0 -1rem
     }
 
     .big-text{
@@ -282,7 +282,7 @@
         border: 3px solid white;
         border-radius: 2rem;
         background-color: #1A1A1D;
-        margin-left: 3rem;
+        margin-left: 0rem;
     }
 
 

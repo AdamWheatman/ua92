@@ -8,13 +8,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Music Company</title>
+    <!-- BootStrap CSS from here: https://getbootstrap.com/docs/5.3/getting-started/introduction/  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Custom CSS -->    
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="complete.css">
     <link rel="shortcut icon" href="SimplifiedLogo.png" type="image/x-icon">
 </head>
 
 <body class="body1">
+    <!-- Navigation Bar - Header -->
     <nav class="navbar navbar-expand-lg nav nav--main">
         <div class="container1">
 
@@ -52,12 +55,13 @@
     </nav>
 
     
-
+<!-- This is Where the details from the form on Contact.HTML will be placed so that the user can confirm their details -->
     <section class="complete">
         <p class="title">
             Confirm Details
         </p>
-
+           
+<!--The Id's are used by "names.js" for replacing the text thats already in the html with the correct details-->
         <p class="user_details" id ="user_email">
             Email
         </p>
@@ -88,7 +92,10 @@
             <button class="button" id="myBtn">
                 Confirm
             </button>
-
+               
+<!--This is the content that appears in the popup after confirming the details.-->
+<!--The Code for this Modal I Did not create myself, it was taken from here: https://www.w3schools.com/howto/howto_css_modals.asp-->
+<!--However, I did add some customisation to fit the theme of the site which can be found in complete.css  -->
             <div id="myModal" class="modal">
                 <div class="modal-content">
                   <span class="close">&times;</span>
@@ -108,8 +115,12 @@
         </a>
     </nav>
 
+        
+    <!-- BootStrap JavaScript from here: https://getbootstrap.com/docs/5.3/getting-started/introduction/  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- Modal JavaScript from here: https://www.w3schools.com/howto/howto_css_modals.asp  -->
     <script src="modal.js"></script>
+    <!--The JavaScript for repeating the users details is mine :) -->
     <script src="names.js"></script>
 </body>
 

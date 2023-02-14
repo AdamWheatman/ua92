@@ -112,6 +112,7 @@ addtocartbtnDom.forEach(addtocartbtnDom => {
               }
               if(cart.length < 1){
                 document.querySelector('.cart-footer').remove();
+                document.querySelector('.cart-title').remove();
               }
             });
           });
@@ -123,6 +124,7 @@ addtocartbtnDom.forEach(addtocartbtnDom => {
             cartTotal = 0;
             if(document.querySelector('.cart-footer') !== null){
               document.querySelector('.cart-footer').remove();
+              document.querySelector('.cart-title').remove();
             }
             addtocartbtnDom.innerText = "Add to cart";
             addtocartbtnDom.disabled = false;

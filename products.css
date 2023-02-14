@@ -199,7 +199,7 @@
         background-size: cover;
         height: 15rem;
         margin: 1rem 4.5rem 0 1rem;
-        min-width: 38rem;
+        min-width: 37rem;
         max-width: 135rem;
         padding-top: 1rem;
         display: flow-root;
@@ -258,7 +258,7 @@
         outline: 10px solid white;
         backface-visibility: hidden;
         transition: transform 1s ease-in-out;
-        margin-left: 2rem:
+        margin-left: 4rem:
     }
 
     .item-name{
